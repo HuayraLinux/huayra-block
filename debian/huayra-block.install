@@ -1,0 +1,4 @@
+src/* usr/share/huayra-block/src
+bin/huayra-block usr/bin/
+debian/huayra-block.desktop /usr/share/applications
+debian/huayra-block.svg /usr/share/icons/hicolor/scalable/apps
