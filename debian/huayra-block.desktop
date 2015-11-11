@@ -6,4 +6,4 @@ Exec=/usr/bin/huayra-block
 Terminal=false
 Type=Application
 Icon=huayra-block
-Categories=GNOME;GTK;Huayra;Network;
+Categories=GNOME;GTK;Huayra;Games;
