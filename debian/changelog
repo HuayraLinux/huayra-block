@@ -1,3 +1,9 @@
+huayra-block (0.2) unstable; urgency=low
+
+  * Modificando el tamaño de ventana.
+
+ -- Hugo Ruscitti <hugoruscitti@gmail.com>  Wed, 11 Nov 2015 18:35:35 +0100
+
 huayra-block (0.1) unstable; urgency=low
 
   * Versión inicial.
