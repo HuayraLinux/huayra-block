@@ -1,4 +1,3 @@
-¡Hola, esto es huayra-block!
-==========================
+# huayra-block
 
-Este archivo describe el objetivo del proyecto.
+Un mini-juego similar a tetris usando Blockrain.js y node-webkit.
