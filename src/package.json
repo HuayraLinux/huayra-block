@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "main": "index.html",
   "window": {
-     "toolbar": true
+     "toolbar": false,
+     "width": 780,
+     "height": 561,
+     "min_width": 780,
+     "min_height": 561
   }
 }
