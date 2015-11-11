@@ -2,16 +2,51 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" src="blockrain.css">
 </head>
 
 <body>
-  <h1>¡Hola, esta es la plantilla HTML de la aplicación huayra-block!</h1>
 
-  <p>Estas viendo el archivo <code>src/index.html</code>, y
-  está usando también los archivos <code>css/estilo.css</code> y
-  <code>js/app.js</code>.
+  <div class="container">
+    <div class="game" style="width:250px; height:500px;"></div>
+  </div>
 
+  <div class="derecha">
 
+    <div class="estadoDetenido">
+      <button id="botonIniciar">Comenzar a jugar</button>
+    </div>
+
+    <div class="estadoJugando">
+      <button id="botonReiniciar">Reiniciar</button>
+    </div>
+
+    <div class="estadoPierde">
+      <button id="botonVolver">Volver a jugar</button>
+
+      <h1>Game Over</h1>
+    </div>
+
+  </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="blockrain.jquery.js"></script>
+
+  <script>
+      $('.game').blockrain({
+        showFieldOnStart: true,
+        theme: "candy",
+        playText: '',
+        playButtonText: '',
+        gameOverText: '',
+        restartButtonText: '',
+        scoreText: 'Puntaje',
+
+        onGameOver: onGameOver,
+      });
+  </script>
+
+
 </body>
 </html>
