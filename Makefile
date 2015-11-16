@@ -1,4 +1,4 @@
-VERSION=0.0.1
+VERSION=0.0.2
 NOMBRE="huayra-block"
 
 N=[0m
@@ -40,7 +40,6 @@ crear_deb:
 version:
 	# patch || minor
 	@bumpversion patch --current-version ${VERSION} src/package.json Makefile src/index.html --list
-	make build
 	@echo "Es recomendable escribir el comando que genera los tags y sube todo a github:"
 	@echo ""
 	@echo "make subir_version"
