@@ -18,8 +18,9 @@ comandos:
 	@echo ""
 	@echo "  ${Y}Para distribuir${N}"
 	@echo ""
-	@echo "    ${G}publicar${N}        Incrementa la versión."
 	@echo "    ${G}crear_deb${N}       Empaqueta para huayra."
+	@echo "    ${G}version${N}         Incrementa la versión del paquete."
+	@echo "    ${G}subir_version${N}   Publica la version nueva."
 	@echo ""
 
 
@@ -32,8 +33,23 @@ ejecutar_linux:
 ejecutar_mac:
 	/Applications/nwjs.app/Contents/MacOS/nwjs src
 
-publicar:
-	dch -i
 
 crear_deb:
 	dpkg-buildpackage -us -uc
+
+version:
+	# patch || minor
+	@bumpversion patch --current-version ${VERSION} public/package.json Makefile --list
+	make build
+	@echo "Es recomendable escribir el comando que genera los tags y sube todo a github:"
+	@echo ""
+	@echo "make subir_version"
+
+ver_sync: subir_version
+
+subir_version:
+	git commit -am 'release ${VERSION}'
+	git tag '${VERSION}'
+	git push
+	git push --all
+	git push --tags
