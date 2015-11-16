@@ -39,7 +39,7 @@ crear_deb:
 
 version:
 	# patch || minor
-	@bumpversion patch --current-version ${VERSION} public/package.json Makefile --list
+	@bumpversion patch --current-version ${VERSION} src/package.json Makefile src/index.html --list
 	make build
 	@echo "Es recomendable escribir el comando que genera los tags y sube todo a github:"
 	@echo ""
