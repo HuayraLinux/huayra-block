@@ -1,4 +1,4 @@
-VERSION=0.0.2
+VERSION=1.0.0
 NOMBRE="huayra-block"
 
 N=[0m
