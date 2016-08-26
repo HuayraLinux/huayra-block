@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "nwjs-hack": "iglosiggio/nwjs-hack"
+  },
   "author": "",
   "license": "GPLv3"
 }
