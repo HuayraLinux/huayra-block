@@ -1,6 +1,6 @@
 {
   "name": "huayra-block",
-  "version": "0.0.1",
+  "version": "1.2.1",
   "description": "¡Hola, esto es huayra-block!",
   "main": "index.js",
   "scripts": {

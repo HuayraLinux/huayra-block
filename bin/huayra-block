@@ -1,2 +1,3 @@
 #!/bin/bash
-exec nw /usr/share/huayra-block/src
+exec nw /usr/share/huayra-block/src $@
+
